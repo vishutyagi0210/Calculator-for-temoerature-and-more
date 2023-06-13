@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id = "@+id/tempCalSpinnerAndEditText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/tempCalUpperTextView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|end"
+            android:text="0"
+            android:textSize="30dp" />
+
+        <Spinner
+            android:id = "@+id/upperSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:entries="@array/tempSpinnerOptions"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tempCalSpinnerAndEditText">
+
+        <TextView
+            android:id="@+id/tempCalLowerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textAlignment="viewEnd"
+            android:text="0"
+            android:textSize="30dp"
+            android:gravity="center_vertical|end"/>
+
+        <Spinner
+            android:id = "@+id/lowerSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:entries="@array/tempSpinnerOptions"
+            android:focusable="false"
+           />
+
+    </RelativeLayout>
+
+</RelativeLayout>

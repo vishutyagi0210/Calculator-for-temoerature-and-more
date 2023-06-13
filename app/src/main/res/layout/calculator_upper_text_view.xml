@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+            <TextView
+                android:id = "@+id/historyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textSize="30dp"
+                android:textAlignment="viewEnd"
+                android:text = ""
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"/>
+
+        <TextView
+            android:id="@+id/currentView"
+            android:layout_below="@+id/historyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textAlignment="viewEnd"
+            android:text=""/>
+
+        <TextView
+            android:layout_below="@+id/currentView"
+            android:id="@+id/dynamicView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:textAlignment="viewEnd"
+            android:text=""/>
+
+</RelativeLayout>

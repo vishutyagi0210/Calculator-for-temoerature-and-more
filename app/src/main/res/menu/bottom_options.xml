@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/calculatorIcon"
+        android:title="Cal"
+        android:icon="@drawable/baseline_calculate_24"
+        app:showAsAction="always"/>
+
+    <item android:id = "@+id/tempCal"
+        android:title="TempCal"
+        android:icon="@drawable/baseline_device_thermostat_24"
+        app:showAsAction="always"/>
+
+    <item android:id= "@+id/more"
+        android:title="More"
+        android:icon="@drawable/baseline_apps_24"
+        app:showAsAction="always"/>
+
+</menu>

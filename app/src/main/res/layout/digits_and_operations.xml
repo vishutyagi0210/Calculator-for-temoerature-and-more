@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="300dp">
+
+    <LinearLayout
+        android:id="@+id/funcitonButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/ACButon"
+            style="@style/functionsButtonStyles"
+            android:text="AC"
+            android:onClick="onClickFunctions"/>
+
+        <Button
+            android:id="@+id/backSpaceButton"
+            style="@style/functionsButtonStyles"
+            android:text="X"
+            android:onClick="onClickFunctions"/>
+
+        <Button
+            android:id="@+id/moduloButton"
+            style="@style/functionsButtonStyles"
+            android:text="%"
+            android:onClick="onClickOperations"/>
+        />
+
+        <Button
+            android:id="@+id/divideButton"
+            style="@style/functionsButtonStyles"
+            android:text="/"
+            android:onClick="onClickOperations"/>
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:layout_below="@+id/funcitonButtons">
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/digitsButtonStyle"
+            android:text="9"
+            android:textSize="20sp"
+            android:onClick="onClickDigit"/>
+
+        <Button
+            android:id="@+id/eightButton"
+            style="@style/digitsButtonStyle"
+            android:text="8"
+            android:textSize="20sp"
+            android:onClick="onClickDigit"/>
+
+        <Button
+            android:id="@+id/sevenButton"
+            style="@style/digitsButtonStyle"
+            android:text="7"
+            android:textSize="20sp"
+            android:onClick="onClickDigit"/>
+
+        <Button
+            android:id="@+id/multiplyButton"
+            style="@style/functionsButtonStyles"
+            android:text="*"
+            android:onClick="onClickOperations"/>
+
+        <Button
+            android:id="@+id/sixButton"
+            style="@style/digitsButtonStyle"
+            android:text="6"
+            android:textSize="20sp"
+            android:onClick="onClickDigit"/>
+
+        <Button
+            android:id="@+id/fiveButton"
+            style="@style/digitsButtonStyle"
+            android:text="5"
+            android:textSize="20sp"
+            android:onClick="onClickDigit"/>
+
+        <Button
+            android:id="@+id/fourButton"
+            style="@style/digitsButtonStyle"
+            android:text="4"
+            android:textSize="20sp"
+            android:onClick="onClickDigit"/>
+
+        <Button
+            android:id="@+id/minusButton"
+            style="@style/functionsButtonStyles"
+            android:text="-"
+            android:onClick="onClickOperations"/>
+
+        <Button
+            android:id="@+id/threeButton"
+            style="@style/digitsButtonStyle"
+            android:text="3"
+            android:textSize="20sp"
+            android:onClick="onClickDigit"/>
+
+        <Button
+            android:id="@+id/twoButton"
+            style="@style/digitsButtonStyle"
+            android:text="2"
+            android:textSize="20sp"
+            android:onClick="onClickDigit"/>
+
+        <Button
+            android:id="@+id/oneButton"
+            style="@style/digitsButtonStyle"
+            android:text="1"
+            android:textSize="20sp"
+            android:onClick="onClickDigit"/>
+
+        <Button
+            android:id="@+id/plusButton"
+            style="@style/functionsButtonStyles"
+            android:text="+"
+            android:onClick="onClickOperations"/>
+
+        <Button
+            android:id="@+id/zeroButton"
+            style="@style/digitsButtonStyle"
+            android:text="0"
+            android:textSize="20dp"
+            android:onClick="onClickDigit"/>
+
+        <Button
+            android:id="@+id/dotButton"
+            style="@style/digitsButtonStyle"
+            android:text="."
+            android:textSize="20dp"
+            android:onClick="onClickDigit"/>
+
+        <Button
+            android:id="@+id/evaluateButton"
+            style="@style/digitsButtonStyle"
+            android:background="@drawable/digits_button_style"
+            android:text="="
+            android:textSize="20dp"
+            android:onClick="onClickFunctions"/>
+
+    </GridLayout>
+
+</RelativeLayout>
